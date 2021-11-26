@@ -59,21 +59,12 @@ Download the pretrained models from this link: [checkpoints](https://drive.googl
 Modify the ``` python configurations.py ``` in the `configs` folder with the relevant paths to the test data and checkpoints
 
 * For the test data, *e.g.* DDD17, please assign the path to `./test_dir/ddd17/`
-* For the checkpoint of aps nework, please assign the path to `./res/ddd17/ddd17_aps_ckpt.pth`
 * For the checkpoint of event network, please assign the path to `./res/ddd17/ddd17_event_ckpt.pth`
 
-
-
-Test the MIoU of event and aps segmentation networks:
+Visualize semantic segmentation results for event data:
 
 ```python
-python test_evdistill.py
-```
-
-Visualize semantic segmentation results for both event and aps data:
-
-```python
-python visualize.py
+python test.py
 ```
 
 ## Note 
