@@ -1,7 +1,7 @@
 ## Dual Transfer Learning for Event-based End-task Prediction via Pluggable Event to Image Translation (ICCV'21)
 
 We have updated our paper by adding some new references. 
-lease refer to the Arxiv paper at https://arxiv.org/pdf/2109.01801.pdf for the latest information.
+Please refer to the Arxiv paper at https://arxiv.org/pdf/2109.01801.pdf for the latest information.
 
 ## Citation
 If you find this resource helpful, please cite the paper as follows:
@@ -49,22 +49,23 @@ pip install -r requirements.txt
 
 Download DDD17 test and MVSEC test dataset from this link: [DDD17 test and MVSEC test](https://drive.google.com/drive/u/1/folders/1zhQCr0r_xfButDnLLy1BoD2j7EGP18NQ)
 
-* For DDD17 dataset, please put the dataset to `./dataset/ddd17/`
-* For MVSEC dataset, please put the dataset to `./dataset/mvsec/`
+* For DDD17 dataset general visiual condition, please put the dataset to `./dataset/ddd17/test/`
+* For DDD17 dataset low dynamic range (LDR) condition, please put the dataset to `./dataset/ddd17/other/`
 
 Download the pretrained models from this link: [checkpoints](https://drive.google.com/drive/u/1/folders/10h7jhvzMX2dNKlbLXhp3ARRkhbUl8L7J)
 
-* Put the checkpoints of event and aps segmentation networks for e.g. DDD17 dataset into `./res/`
+* Put the checkpoint of event segmentation network into `./res/`
 
 Modify the ``` python configurations.py ``` in the `configs` folder with the relevant paths to the test data and checkpoints
 
 * For the test data, *e.g.* DDD17, please assign the path to `./test_dir/ddd17/`
 * For the checkpoint of event network, please assign the path to `./res/ddd17/ddd17_event_ckpt.pth`
 
+
 Visualize semantic segmentation results for event data:
 
 ```python
-python test.py
+python visualize.py
 ```
 
 ## Note 
