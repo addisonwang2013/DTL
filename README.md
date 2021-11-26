@@ -1,6 +1,7 @@
 ## Dual Transfer Learning for Event-based End-task Prediction via Pluggable Event to Image Translation (ICCV'21)
 
 We have updated our paper by adding some new references. 
+
 Please refer to the Arxiv paper at https://arxiv.org/pdf/2109.01801.pdf for the latest information.
 
 ## Citation
@@ -15,13 +16,17 @@ If you find this resource helpful, please cite the paper as follows:
   year={2021}
 }
 ```
-* Segmentic segmentation on DDD17 dataset
+* Segmentic segmentation on the general visual condition.
 
-![image](https://user-images.githubusercontent.com/79432299/118368456-1df61b00-b5dd-11eb-87a7-54a1714628f9.png)
+![image](https://user-images.githubusercontent.com/79432299/143512905-d07842b0-0348-4378-aead-a2689868e5a6.png)
 
-* Segmentic segmentation on MVSEC dataset
+* Segmentic segmentation on over-exposed visual condition.
 
-![image](https://user-images.githubusercontent.com/79432299/118368521-5a297b80-b5dd-11eb-8a98-b38c9879f014.png)
+![image](https://user-images.githubusercontent.com/79432299/143513108-49acae9c-f217-49a3-91d2-d69a8976341a.png)
+
+* Depth estimation on the night-scene condition
+
+![image](https://user-images.githubusercontent.com/79432299/143513185-4bc9b81c-725f-4f95-a9e5-a29646bf4c7b.png)
 
 
 ## Setup
@@ -62,7 +67,7 @@ Modify the ``` python configurations.py ``` in the `configs` folder with the rel
 * For the checkpoint of event network, please assign the path to `./res/ddd17/ddd17_event_ckpt.pth`
 
 
-Visualize semantic segmentation results for event data:
+Visualize semantic segmentation results for event data for general and LDR visual condtions:
 
 ```python
 python visualize.py
