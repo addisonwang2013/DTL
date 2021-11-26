@@ -54,8 +54,8 @@ pip install -r requirements.txt
 
 Download example validation data (general and LDR visual condtions) from this link: [DDD17 example data](https://drive.google.com/drive/u/2/folders/1Q-1djBTjc8vbaDBLtfmSXZ1W5lzirz5p)
 
-* For DDD17 dataset general visiual condition, please put the dataset to `./dataset/ddd17/test/`
-* For DDD17 dataset low dynamic range (LDR) condition, please put the dataset to `./dataset/ddd17/other/`
+* For DDD17 dataset general visiual condition, please put the dataset to `./dataset/ddd17/general/`
+* For DDD17 dataset low dynamic range (LDR) condition, please put the dataset to `./dataset/ddd17/ldr/`
 
 Download the pretrained models from this link: [checkpoints](https://drive.google.com/drive/u/2/folders/1j6Xu5iO9QJLG_BYHHYdpErpcHM9rwFWD)
 
@@ -64,7 +64,7 @@ Download the pretrained models from this link: [checkpoints](https://drive.googl
 Modify the ``` python configurations.py ``` in the `configs` folder with the relevant paths to the test data and checkpoints
 
 * For the test data, *e.g.* DDD17, please assign the path to `./test_dir/ddd17/`
-* For the checkpoint of event network, please assign the path to `./res/ddd17/ddd17_event_ckpt.pth`
+* For the checkpoint of event network, please assign the path to `./res/eventdual_best.pth`
 
 
 Visualizing semantic segmentation results for general and LDR visual condtions:
