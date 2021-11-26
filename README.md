@@ -34,7 +34,7 @@ If you find this resource helpful, please cite the paper as follows:
 Download 
 
 ``` python
-git clone  https://github.com/addisonwang2013/evdistill/
+git clone  https://github.com/addisonwang2013/DTL/
 ```
 
 Make your own environment
@@ -52,12 +52,12 @@ cd evdistill
 pip install -r requirements.txt
 ```
 
-Download DDD17 test and MVSEC test dataset from this link: [DDD17 test and MVSEC test](https://drive.google.com/drive/u/1/folders/1zhQCr0r_xfButDnLLy1BoD2j7EGP18NQ)
+Download example validation data (general and LDR visual condtions) from this link: [DDD17 example data](https://drive.google.com/drive/u/2/folders/1Q-1djBTjc8vbaDBLtfmSXZ1W5lzirz5p)
 
 * For DDD17 dataset general visiual condition, please put the dataset to `./dataset/ddd17/test/`
 * For DDD17 dataset low dynamic range (LDR) condition, please put the dataset to `./dataset/ddd17/other/`
 
-Download the pretrained models from this link: [checkpoints](https://drive.google.com/drive/u/1/folders/10h7jhvzMX2dNKlbLXhp3ARRkhbUl8L7J)
+Download the pretrained models from this link: [checkpoints](https://drive.google.com/drive/u/2/folders/1j6Xu5iO9QJLG_BYHHYdpErpcHM9rwFWD)
 
 * Put the checkpoint of event segmentation network into `./res/`
 
@@ -67,7 +67,7 @@ Modify the ``` python configurations.py ``` in the `configs` folder with the rel
 * For the checkpoint of event network, please assign the path to `./res/ddd17/ddd17_event_ckpt.pth`
 
 
-Visualize semantic segmentation results for event data for general and LDR visual condtions:
+Visualizing semantic segmentation results for general and LDR visual condtions:
 
 ```python
 python visualize.py
