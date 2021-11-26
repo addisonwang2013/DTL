@@ -78,7 +78,7 @@ python visualize.py
 In this work, for convenience, the event data are embedded and stored as multi-channel event images, which are the paired with the aps frames. It is also possible to directly feed event raw data after embedding to the student network directly with aps frames.
 
 ## Acknowledgement
-The skeleton code is inspired by [Deeplab-v3-Plus](https://github.com/CoinCheung/DeepLab-v3-plus-cityscapes/)
+The skeleton code is inspired by [Deeplab-v3-Plus](https://github.com/CoinCheung/DeepLab-v3-plus-cityscapes/) and EDSR (https://github.com/sanghyun-son/EDSR-PyTorch)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
