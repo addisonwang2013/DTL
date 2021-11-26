@@ -1,6 +1,6 @@
 ## Dual Transfer Learning for Event-based End-task Prediction via Pluggable Event to Image Translation (ICCV'21)
 
-We have updated our paper by adding some missing references. 
+We have updated our paper by adding some references. 
 
 Please refer to the Arxiv paper at https://arxiv.org/pdf/2109.01801.pdf for the latest information.
 
